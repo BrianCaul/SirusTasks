@@ -1,0 +1,21 @@
+<div class="row">
+    <div ng-repeat="user in users" class="col-lg-3">
+        <div class="hpanel hgreen contact-panel">
+            <div class="panel-body">
+                <span class="label label-success pull-right">NEW</span>
+                <img alt="logo" class="img-circle m-b" ng-src="{{user.image}}">
+                <h3><a href="">{{user.name}} </a></h3>
+                <div class="text-muted font-bold m-b-xs">{{user.email}}</div>
+                <p>
+                    {{user.bio}}
+                </p>
+            </div>
+            <div class="panel-footer contact-footer">
+                <div class="row">
+                    <div class="col-md-6 border-right"> <div class="contact-stat"><span>Comments: </span> <strong>{{user.comments.length}}</strong></div> </div>
+                    <div class="col-md-6 border-right"> <div class="contact-stat"><span>Message Posts: </span> <strong>{{user.notes.length}}</strong></div> </div
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
